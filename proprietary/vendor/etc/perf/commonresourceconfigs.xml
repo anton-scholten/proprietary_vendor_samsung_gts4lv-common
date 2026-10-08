@@ -78,11 +78,11 @@ need to be added just before the end of it's major group. -->
         <!-- sched_freq_aggr_threshold perflock will have contention with sched_boost level 3,
         so disable this resource for the target which is going to use sched boost 3 level.-->
         <Minor OpcodeValue="0x17" Node="/proc/sys/kernel/sched_freq_aggregate_threshold" />
-        <Minor OpcodeValue="0x18" Node="/dev/stune/top-app/schedtune.prefer_idle" />
+        <Minor OpcodeValue="0x18" Node="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive" />
         <Minor OpcodeValue="0x19" Node="/proc/sys/kernel/sched_initial_task_util" />
         <Minor OpcodeValue="0x1A" Node="/sys/devices/system/cpu/cpu0/sched_load_boost" />
         <Minor OpcodeValue="0x1B" Node="/proc/sys/kernel/sched_little_cluster_coloc_fmin_khz" />
-        <Minor OpcodeValue="0x1C" Node="/dev/stune/top-app/schedtune.boost" />
+        <Minor OpcodeValue="0x1C" Node="/dev/cpuctl/top-app/cpu.uclamp.min" />
         <Minor OpcodeValue="0x1D" Node="/proc/sys/kernel/sched_busy_hysteresis_enable_cpus" />
         <Minor OpcodeValue="0x1E" Node="/proc/sys/kernel/sched_min_task_util_for_colocation" />
         <Minor OpcodeValue="0x1F" Node="/proc/sys/kernel/sched_min_task_util_for_boost" />
@@ -109,7 +109,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x34" Node="/proc/%d/sched_low_latency" Supported="yes" />
         <Minor OpcodeValue="0x35" Node="/proc/sys/kernel/sched_min_granularity_ns" />
         <Minor OpcodeValue="0x36" Node="/proc/sys/kernel/walt_low_latency_task_threshold" />
-        <Minor OpcodeValue="0x37" Node="/dev/stune/foreground/schedtune.prefer_idle" />
+        <Minor OpcodeValue="0x37" Node="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive" />
         <Minor OpcodeValue="0x38" Node="/proc/sys/kernel/%s" Supported="no"/>
         <Minor OpcodeValue="0x39" Node="/dev/stune/top-app/schedtune.colocate" />
         <Minor OpcodeValue="0x3A" Node="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive" />
