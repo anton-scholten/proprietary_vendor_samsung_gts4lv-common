@@ -12730,6 +12730,7 @@ cc_prebuilt_library_shared {
                 "libwfddisplayconfig",
                 "libmedia_helper",
                 "libaudioclient",
+                "libaudiobase",
                 "libwfdavenhancements",
                 "libhidlbase",
                 "libgralloctypes",
